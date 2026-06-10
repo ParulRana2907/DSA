@@ -1,1 +1,26 @@
+import java.util.*;
 
+public class BalancedParentheses {
+    public static void main(String[] args) {
+        String str = "(a+b)*c";
+        Stack<Character> st = new Stack<>();
+
+        for (char ch : str.toCharArray()) {
+            if (ch == '(' || ch == '{' || ch == '[') {
+                st.push(ch);
+            } else if (ch == ')' || ch == '}' || ch == ']') {
+                if (st.isEmpty() || 
+                   (ch == ')' && st.pop() != '(') ||
+                   (ch == '}' && st.pop() != '{') ||
+                   (ch == ']' && st.pop() != '[')) {
+                    System.out.println("Parenthesis Not Balanced ❌");
+                    return;
+                }
+            }
+        }
+
+        System.out.println(st.isEmpty() 
+            ? "Parenthesis Balanced" 
+            : "Parenthesis Not Balanced");
+    }
+}
