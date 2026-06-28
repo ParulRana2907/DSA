@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*
+    class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1), curr = dummy;
 
