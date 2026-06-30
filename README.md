@@ -14,4 +14,4 @@ Trees: Implementing hierarchical data models, focusing on Binary Trees, Binary S
 and various tree traversal methodologies.
 
 🎯 Technical ObjectivesCode
-Optimization: Moving solutions from brute-force approaches to optimal time and space complexities ($O(n \log n)$, $O(n)$, $O(1)$).
+Optimization: Moving solutions from brute-force approaches to optimal time and space complexities ($O(n \log n)$, $O(n)$, O(1)).
