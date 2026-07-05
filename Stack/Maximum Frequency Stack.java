@@ -1,3 +1,5 @@
+import java.util.*;
+
 class FreqStack {
     Map<Integer, Integer> freq = new HashMap<>();
     Map<Integer, Stack<Integer>> group = new HashMap<>();
