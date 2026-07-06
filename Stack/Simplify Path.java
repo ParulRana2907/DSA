@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*
+    class Solution {
     public String simplifyPath(String path) {
         Stack<String> st = new Stack<>();
         
